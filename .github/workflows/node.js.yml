@@ -1,11 +1,10 @@
-
 name: Testes automatizados
 
 on:
   push:
-    branches: [principal]
+    branches: [main]
   pull_request:
-    branches: [principal]
+    branches: [main]
 
 jobs:
   test:
