@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Authenticator 2FA",
+  "version": "1.9.0",
+  "description": "Autenticador TOTP local com cofre criptografado, interface renovada, painel amplo, backups protegidos e importação por QR Code, URI ou chave manual.",
+  "permissions": [
+    "storage",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_title": "Authenticator 2FA",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
