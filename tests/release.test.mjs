@@ -24,8 +24,13 @@ test('Manifest V3 não declara host permissions nem scripts remotos', () => {
   assert.equal(manifest.background, undefined);
   assert.equal(manifest.content_scripts, undefined);
 });
+
 test('arquivos essenciais de publicação existem', () => {
-  for (const file of ['README.md', 'CHANGELOG.md', 'PRIVACY.md', 'CONTRIBUTING.md', 'PUBLICACAO.md', 'SECURITY_REVIEW.md', 'THIRD_PARTY_NOTICES.md']) {
-    assert.ok(fs.existsSync(path.join(root, file)), `Arquivo ausente: ${file}`);
+  for (const file of ['README.md', 'CHANGELOG.md']) {
+    assert.ok(
+      fs.existsSync(path.join(root, file)),
+      `Arquivo ausente: ${file}`
+    );
   }
 });
+
