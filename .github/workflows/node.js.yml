@@ -1,3 +1,4 @@
+
 name: Testes automatizados
 
 on:
@@ -9,14 +10,14 @@ on:
 jobs:
   test:
     name: Executar testes
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Baixar código do repositório
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configurar Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22
 
