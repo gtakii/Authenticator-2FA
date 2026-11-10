@@ -1,0 +1,25 @@
+
+name: Testes automatizados
+
+on:
+  push:
+    branches: [principal]
+  pull_request:
+    branches: [principal]
+
+jobs:
+  test:
+    name: Executar testes
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Executar testes automatizados
+        run: node --test tests/*.test.mjs
