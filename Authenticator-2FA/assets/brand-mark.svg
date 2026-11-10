@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Símbolo de segurança">
-  <rect x="3" y="3" width="122" height="122" rx="29" fill="#0b0b0b" stroke="#777" stroke-width="2"/>
-  <path d="M64 19 99 33v27c0 24-14 40-35 50C43 100 29 84 29 60V33Z" fill="none" stroke="#f5f5f5" stroke-width="6" stroke-linejoin="round"/>
-  <circle cx="64" cy="61" r="17" fill="none" stroke="#f5f5f5" stroke-width="5"/>
-  <path d="M64 44v-8M64 61l10-8M64 78v8" fill="none" stroke="#f5f5f5" stroke-width="5" stroke-linecap="round"/>
-  <path d="M48 91h32" stroke="#888" stroke-width="4" stroke-linecap="round"/>
-</svg>
